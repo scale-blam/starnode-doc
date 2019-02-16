@@ -15,13 +15,13 @@ You need to have:
 To install Starnode
 
 ```
-$ npm install -g https://starbase.scalejs.com/download/public/starnode-latest.tgz
+$ npm install -g https://starbase.scaledynamics.io/download/public/starnode-latest.tgz
 ```
 
 A `sudo` could be required to install it:
 
 ```
-$ sudo npm install -g https://starbase.scalejs.com/download/public/starnode-latest.tgz
+$ sudo npm install -g https://starbase.scaledynamics.io/download/public/starnode-latest.tgz
 ```
 
 ## Sample codes
