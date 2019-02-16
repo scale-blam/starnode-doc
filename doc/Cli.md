@@ -2,25 +2,19 @@
 
 ## Main usage
 
-To run a nodejs _app.js_ script using Starnode
+To run a _Node.js_ `app.js` script using _Starnode_
 
 ```
-$ starnode [<starnode-options>] app.js [<app-options>]
+$ starnode --user=<USER-ID> [<starnode-options>] app.js [<app-options>]
 ```
 
-A typical Starnode command is
-
-```
-$ starnode --user=<user-id> app.js <app-options>
-```
-
-**Warning: any option passed after _app.js_ will be ignored by Starnode, and passed as is to _app.js_**
+**Warning: any option passed after `app.js` will be ignored by _Starnode_, and passed as is to `app.js`**
 
 ## Mandatory options
 
 ### user
 
-The _user_ option expects an ID that allows you to be recognized by Starbase:
+The _user_ option expects an ID that allows you to be recognized by _Starnode_:
 
 ```
 --user=<user-id>
@@ -30,7 +24,7 @@ The _user_ option expects an ID that allows you to be recognized by Starbase:
 
 ### name
 
-You can indicate a name to differentiate your Starnode instances.
+You can indicate a name to differentiate your _Starnode_ instances.
 
 ```
 --name=<string>
@@ -38,7 +32,7 @@ You can indicate a name to differentiate your Starnode instances.
 
 ### num-threads
 
-By default Starnode uses the number of available CPUs when creating the execution _warp_ threads.
+By default _Starnode_ uses the number of available CPUs when creating the execution _warp_ threads.
 
 To set a particular number of _warp_ threads use this option: 
 
@@ -48,8 +42,8 @@ To set a particular number of _warp_ threads use this option:
 
 ### project
 
-Starnode is collecting some information that is sent to the Starbase server in order to dynamically
-optimize the application/service execution. To recognize one application from another, Starnode
+_Starnode_ is collecting some information that is sent to ta server in order to dynamically
+optimize the application/service execution. To recognize one application from another, _Starnode_
 automatically uses the name and version (<name>-<version>) available in the `package.json` found
 in the `app.js` directory or its parents. If it is not found, `<unknown>` is used unless the option
 below is set.
@@ -60,7 +54,7 @@ below is set.
 
 ### debug
 
-Enable debugging mode for the current Starnode instance. The debugging mode is intended to be used during
+Enable debugging mode for the current _Starnode_ instance. The debugging mode is intended to be used during
 development, additional warnings are reported to help write and debug your code.
 
 ```
@@ -79,7 +73,7 @@ To enable the expert mode, use the option below:
 
 ### version
 
-Print Starnode version and exit:
+Print _Starnode_ version and exit:
 
 ```
 --version

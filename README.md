@@ -76,8 +76,9 @@ $ diff --side-by-side --left-column prime/prime-node.js prime/prime-starnode.js
 
 ## Next steps
 
-Great! You can now read the other documentations to try Starnode on your own scripts:
+Great! You can now read the other documentations to try _Starnode_ on your own scripts:
 
 - [To discover the _Warp API_](https://npmjs.com/warp),
-- [To get all options of starnode command line](doc/Cli.md),
-- [To understand Starnode current limitations](doc/Limitations.md).
+- [To get all options of _Starnode_ command line](doc/Cli.md),
+- [To understand _Starnode_ good practices](doc/GoodPractices.md).
+- [To understand _Starnode_ current limitations](doc/Limitations.md).
