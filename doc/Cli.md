@@ -26,18 +26,6 @@ The _user_ option expects an ID that allows you to be recognized by Starbase:
 --user=<user-id>
 ```
 
-### project (if no package.json)
-
-Starnode is collecting some information that is sent to the Starbase server in order to dynamically
-optimize the application/service execution. To recognize one application from another, Starnode
-automatically uses the name and version (name-version) available in the package.json when launching the
-command. If no package.json is found, please use the option below to set an indicative name that
-represents your application/service.
-
-```
---project=<string>
-```
-
 ## Other options
 
 ### name
@@ -48,14 +36,26 @@ You can indicate a name to differentiate your Starnode instances.
 --name=<string>
 ```
 
-### numFlows
+### num-threads
 
-By default Starnode uses the number of available CPUs when creating the execution flows.
+By default Starnode uses the number of available CPUs when creating the execution _warp_ threads.
 
-To set a particular number of flows use this option: 
+To set a particular number of _warp_ threads use this option: 
 
 ```
---numFlows=<integer>
+--num-threads=<integer>
+```
+
+### project
+
+Starnode is collecting some information that is sent to the Starbase server in order to dynamically
+optimize the application/service execution. To recognize one application from another, Starnode
+automatically uses the name and version (<name>-<version>) available in the `package.json` found
+in the `app.js` directory or its parents. If it is not found, `<unknown>` is used unless the option
+below is set.
+
+```
+--project=<string>
 ```
 
 ### debug

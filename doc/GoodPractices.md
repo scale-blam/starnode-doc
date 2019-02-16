@@ -34,7 +34,7 @@ will be, you just know it will be either `7` or `8`.
 ### How to solve the problem
 
 To obtain the correct behavior in this example, you'll need to apply the changes to the shared
-variable in the main flow by using the `.then` of the promise.
+variable in the main thread by using the `.then` of the promise.
 
 ``` javascript
 const warp = require('warp');

@@ -67,7 +67,7 @@ The returned `Promise` is rejected with an `Error`. The error message is:
 >  Cannot serialize: property with a getter or a setter unsupported
 
 ### Functions
-Functions can be transported back only if there are coming from the main flow and are kept unmodified.
+Functions can be transported back only if there are coming from the main thread and are kept unmodified.
 
 ``` javascript
 function ff() {
@@ -88,7 +88,7 @@ function f() {
 warp.callAsPromise(f);
 ```
 
-\'ff\' cannot be transported back to the main flow because it was defined in a parallel flow.
+\'ff\' cannot be transported back to the main thread because it was defined in a parallel _warp_ thread.
 
 The returned `Promise` is rejected with an `Error`. The error message is:
 > Cannot diff: function 'ff' is not instrumented
