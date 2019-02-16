@@ -1,4 +1,4 @@
-# Limitations of StarNode
+# Limitations of _Starnode_
 
 ## Code features preventing remote execution
 
@@ -396,10 +396,12 @@ The returned `Promise` is rejected with an `Error`. The error message is:
 > Function 'bound ff' is not instrumented
 
 ### Strict code only
-Starnode runs in strict mode, and is designed to execute strict code. It can however execute non-strict code, with only a slight risk of incorrectness when using language features causing a different behaviour between strict and non-strict code.
+_Starnode_ runs in strict mode, and is designed to execute strict code. It can however execute non-strict code,
+with only a slight risk of incorrectness when using language features causing a different behaviour between strict
+and non-strict code.
 Particularly, any function accessing a scope modified by an `eval` (for example variable declared
 by `eval`) is unsupported, any function declared by `eval` is unsupported. Any
-use of `with` is unsupported and Starnode handling of `with` may change between versions.
+use of `with` is unsupported and _Starnode_ handling of `with` may change between versions.
 
 ## Modification of runtime behaviour
 
@@ -418,5 +420,5 @@ with an empty string when executing on the service node) and is always broken du
 Explicit names are always preserved, both in local and remote executions.
 
 ## Exit
-Starnode does not support automatic exit after execution of last task yet. This means you'll have to
+_Starnode_ does not support automatic exit after execution of last task yet. This means you'll have to
 explicitly call `process.exit` at the end of your programs.

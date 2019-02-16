@@ -1,4 +1,4 @@
-# Starnode command line options
+# _Starnode_ command line options
 
 ## Main usage
 

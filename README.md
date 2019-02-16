@@ -2,7 +2,7 @@
 
 ## Requirements
 
-Starnode is heavily tested on linux machines, but it must works on _macOS_ as well.
+_Starnode_ is heavily tested on linux machines, but it must works on _macOS_ as well.
 Please, let's us know if you encounter issues on this OS.
 
 You need to have:
@@ -10,9 +10,9 @@ You need to have:
 - An up-to-date _npm_ (it is installed with _Node.js_ and should be
   updated with: `npm install -g npm`).
 
-## Starnode installation
+## _Starnode_ installation
 
-To install Starnode
+To install _Starnode_
 
 ```
 $ npm install -g https://starbase.scaledynamics.io/download/public/starnode-latest.tgz
