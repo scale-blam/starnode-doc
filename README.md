@@ -2,8 +2,8 @@
 
 ## Requirements
 
-_Starnode_ is heavily tested on linux machines, but it must works on _macOS_ as well.
-Please, let's us know if you encounter issues on this OS.
+_Starnode_ is heavily tested on linux machines, but it must work on _macOS_ as well.
+Please, let us know if you encounter issues on this OS.
 
 You need to have:
 - [_Node.js_](https://nodejs.org/en/download/) 8 or newer ;
@@ -47,7 +47,7 @@ $ node prime/prime-node.js
 $ starnode --user <user-id> prime/prime-starnode.js 
 ```
 
-Compare execution time display at the end of each execution. _E.g._ below is what we get on
+Compare execution time displayed at the end of each execution. _E.g._ below is what we get on
 a 6 CPUs computer:
 
 ```
@@ -76,7 +76,7 @@ $ diff --side-by-side --left-column prime/prime-node.js prime/prime-starnode.js
 
 ## Next steps
 
-Great! You can now read the other documentations to try _Starnode_ on your own scripts:
+Great! You can now read other documentation to try _Starnode_ on your own scripts:
 
 - [To discover the _Warp API_](https://npmjs.com/warp),
 - [To get all options of _Starnode_ command line](doc/Cli.md),
